@@ -36,9 +36,9 @@ public class RunTest {
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Search for Vendor")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("vendorName")).sendKeys("Blue Lagoon");
+		driver.findElement(By.id("vendorName")).sendKeys("IT Works");
 		driver.findElement(By.id("buttonSearch")).click();
-		String country = driver.findElement(By.xpath("(//td[text()='Blue Lagoon']/following-sibling::td)[4]")).getText();
+		String country = driver.findElement(By.xpath("(//td[text()='IT Works']/following-sibling::td)[4]")).getText();
 		takeSnap();
 		System.out.println(country);
 		driver.findElement(By.linkText("Log Out")).click();
