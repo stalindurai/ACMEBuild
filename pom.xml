@@ -4,6 +4,12 @@
   <artifactId>ACME</artifactId>
   <version>1.0.0</version>
     <dependencies>
+	    <dependency>
+			<groupId>org.zeroturnaround</groupId>
+			<artifactId>zt-zip</artifactId>
+			<version>1.14</version>
+			<type>jar</type>
+		</dependency>
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
