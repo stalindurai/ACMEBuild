@@ -15,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterSuite;
 import org.zeroturnaround.zip.ZipUtil;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RunTest {
 	
@@ -22,8 +23,8 @@ public class RunTest {
 	
 	@Test
 	public void runTest() throws InterruptedException { // for chrome
-		
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		// System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
