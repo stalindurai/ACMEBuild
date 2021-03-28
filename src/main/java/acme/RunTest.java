@@ -60,7 +60,7 @@ public class RunTest {
 		}
 	}
 	
-	@AfterSuite
+	//@AfterSuite
 	public void afterSuite() {
 		ZipUtil.pack(new File("./snaps"), new File("./snaps.zip"));
 
